@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "Poppins Black";
+    src: url("assets/Poppins-Black.otf")
+}
+@font-face {
+    font-family: "Poppins Semi-Bold";
+    src: url("assets/Poppins-SemiBold.otf")
+}
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("assets/Poppins-Regular.otf")
+}
+@font-face {
+    font-family: "Poppins Light";
+    src: url("assets/Poppins-Light.otf")
+}
+@font-face {
+    font-family: "Poppins Thin";
+    src: url("assets/Poppins-Thin.otf")
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.animated {
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInUp {
+    opacity: 0;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+body{
+    background:
+    linear-gradient(to right, 
+    rgba(58, 142, 94, 0.425),
+    rgba(52, 50, 149, 0.385)),
+    url(assets/ashton-bingham-EQFtEzJGERg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: overlay;
+}
+::selection{
+    background-color: rgb(32, 189, 165);
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.334);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #0000001a;
+}
+
+/* Navigation CSS */
+.nav-link{
+    font-family: "Poppins Regular";
+    color: white !important;
+}
+.nav-link:hover{
+    color: rgb(156, 173, 174) !important;
+}
+
+/* Main Section CSS */
+.bg-image{
+    height: 90vh;
+}
+.main-container{
+    height: 85vh;
+}
+.name{
+    font-family: "Poppins Semi-Bold";
+}
+p .display-6{
+    font-family: "Poppins Light";
+}
+.hire{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 170px;
+    height: 60px;
+    font-size: 24px !important;
+    border-radius: 25px !important;
+    font-family: "Poppins Regular" !important;
+    overflow: hidden;
+    border: none !important;
+    transition: 0.3s !important;
+    padding-top: 10px !important;
+}
+.hire::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    background-color: rgb(50, 189, 168);
+    border-radius: 25px;
+    transition: all 0.3s;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+.hire:hover::before{
+    cursor: pointer;
+    transform: translateX(0);
+}
+.hire:hover{
+    color: white !important;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    transform: scale(1.1);
+}
+.home-btn{
+    display: inline-block;
+    position: fixed;
+    z-index: 2 !important;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(20, 141, 123, 0.993) !important;
+    width: 45px;
+    height: 45px;
+    color: white !important;
+    border: 3px solid rgb(104, 184, 172) !important;
+}
+.home-btn img{
+    width: 10px;
+}
+.social{
+    transition: 0.3s;
+    width: 3vh;
+}
+.social:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* About Section CSS */
+.about{
+    background-color: rgba(255, 255, 255, 0.936);
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+}
+.title{
+    color: rgb(20, 141, 123);
+    font-size: 50px !important;
+    font-family: "Poppins Semi-Bold";
+}
+.about .portfolio-img{
+    width: 300px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.about .portfolio-img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about h3{
+    color: rgb(75, 75, 75);
+    font-size: 30px;
+    font-family: "Poppins Semi-Bold";
+}
+.about p{
+    color: rgb(111, 111, 111);
+    font-size: 24px;
+    font-family: "Poppins Regular";
+}
+.about .btn{
+    width: 160px;
+    height: 60px;
+    background-color: rgb(20, 141, 123);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.123);
+    transition: 0.3s;
+    padding: 18px;
+}
+.about .btn:hover{
+    background-color: rgb(65, 186, 168) !important;
+    color: white !important;
+    transform: scale(1.1);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.email{
+    text-decoration: none;
+    color: #7aab4f;
+}
+.email:hover{
+    color: #577c38;
+}
+h4 .grid{
+    font-size: 50px;
+    font-family: "Poppins Semi-Bold";
+}
+.services .card img{
+    width: 50px;
+}
+.services .card-title{
+    color: rgb(20, 141, 123);
+}
+.services .card{
+    width: 100%;
+    border-color: white !important;
+    transition: 0.3s;
+}
+.services .card:hover{
+    border-color: rgb(20, 141, 123) !important;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.services .card-img-top{
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.services .card:hover .card-img-top{
+    border: solid 1px rgb(20, 141, 123);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.testimonials .card{
+    width: 30rem;
+}
+.testimonials .card-body img{
+    width: 10vh;
+    border-radius: 50px;
+    position: relative;
+    bottom: 50px;
+}
+.testimonials .card-subtitle{
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+}
+.testimonials .card-text{
+    font-size: 18px;
+    position: relative;
+    bottom: 20px;
+}
+
+.testimonials .card{
+    border-color: white !important;
+    transition: 0.3s;
+}
+.testimonials .card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.testimonials .card-body img{
+    transition: 0.3s;
+}
+
+/* Resume Section CSS */
+.resume{
+    background-color: rgba(255, 255, 255, 0.936);
+}
+.resume h3{
+    font-family: "Poppins Regular";
+    color: rgb(20, 141, 123);
+}
+.resume .resume-item{
+    border-color: rgb(24, 176, 154) !important;
+}
+.resume h4{
+    color: rgb(63, 111, 102);
+    font-family: "Poppins Regular";
+    font-weight: 500;
+}
+.resume .text-secondary{
+    color: rgb(20, 141, 123) !important;
+    font-family: "Poppins Light";
+}
+.resume .lead{
+    font-family: "Poppins Light";
+    color: rgb(137, 142, 141);
+    font-size: 18px;
+}
+.progress-bar{
+    background-color: rgb(27, 165, 144) !important;
+    border-radius: 7px;
+}
+.resume h5.skill{
+    font-family: "Poppins regular";
+    color: rgb(59, 98, 91);
+}
+.skills .btn{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(20, 141, 123);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.123);
+    transition: 0.3s;
+    padding: 18px;
+}
+.skills .btn:hover{
+    background-color: rgb(65, 186, 168) !important;
+    color: white !important;
+    transform: scale(1.1);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+/* Portfolio Section CSS */
+.portfolio{
+    background-color: rgba(255, 255, 255, 0.936);
+}
+.portfolio-menu .nav-item a{
+    border: 0 !important;
+    border-bottom: 3px solid rgba(65, 186, 168, 0) !important;
+}
+.portfolio-menu .nav-item a:hover{
+    color: rgb(65, 186, 168) !important;
+    border: 0 !important;
+    border-bottom: 3px solid rgba(65, 186, 168, 0.247) !important;
+}
+.portfolio-menu .nav-item a:focus{
+    color: rgb(65, 186, 168) !important;
+    border-bottom: 3px solid rgb(65, 186, 168) !important;
+    transition: 0.08s;
+    outline: none;
+}
+.portfolio .container img{
+    border-radius: 20px;
+}
+
+/* Contact Section CSS */
+.contact{
+    background-color: rgba(255, 255, 255, 0.936);
+}
+.contact .btn{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(20, 141, 123);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.123);
+    transition: 0.3s;
+    padding: 18px;
+}
+.contact .btn:hover{
+    background-color: rgb(65, 186, 168) !important;
+    color: white !important;
+    transform: scale(1.1);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.contact h3{
+    font-family: "Poppins Regular";
+    color: rgb(20, 141, 123);
+}
+.contact label{
+    color: rgb(91, 110, 107);
+    font-family: "Poppins Light";
+}
+.contact input{
+    border: 0;
+    border-radius: 15px;
+}
+.contact textarea{
+    border: 0;
+    border-radius: 15px;
+}
+textarea.form-control{
+    height: 100px !important;
+}
+.contact input:focus{
+    border: 2px solid rgb(130, 211, 199);
+    transition: 0.08s;
+}
+.contact textarea:focus{
+    border: 2px solid rgb(130, 211, 199);
+    transition: 0.08s;
+}
+.grid-item{
+    height: 380px !important;
+    object-fit: cover;
+}
+.portfolio p{
+    font-family: "Poppins Light";
+}
+.contact .phone-number{
+    width: 20px;
+}
+.contact .landline{
+    width: 22px;
+}
+.contact .email{
+    width: 20px;
+}
+.contact .leads{
+    font-family: "Poppins Light";
+    color: rgb(111, 111, 111);
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 713px) {
+    .resume .row .d-flex{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about .services .row{
+        display: inline-block !important;
+        margin-bottom: 0px !important;
+    }
+    .about .services .row .col-sm-6{
+        display: inline-block !important;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #home .icon{
+        display: inline;
+    }
+    #home .icon a{
+        text-decoration: none;
+    }
+    #home .icons{
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -170px;
+    }
+}

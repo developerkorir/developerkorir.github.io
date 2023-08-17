@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calton - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/calton_logo.png" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+        <div class="container-fluid">
+            <div class="m-3">
+                <a class="navbar-brand text-white fs-4" href="#">
+                  <img src="assets/calton_logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+                  Calton Korir
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center m-3" id="main-nav">
+                <ul class="navbar-nav fs-4">
+                    <li class="nav-item px-md-2">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item px-md-2">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item px-md-2">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-md-2">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-image container-fluid" id="home">
+        <div class="container-fluid">
+            <div class="main-container d-flex justify-content-md-end justify-content-center align-items-center">
+                <div class="text-center mx-md-5 animated fadeInUp">
+                    <h1 class="name display-1 text-white my-0">Calton Korir</h1>
+                    <p class="display-6 text-white">I'm a Web & Android Developer</p>
+                    <a href="#contact" class="hire btn btn-light btn-lg">Hire Me</a>
+                </div>
+            </div>
+            <div class="icons d-md-flex flex-column justify-content-end">
+                <ul class="list-unstyled position-absolute">
+                    <li class="icon my-2">
+                        <a href="https://twitter.com/TheTweetOfKorir">
+                            <img src="assets/icons8-twitter-16.svg" alt="twitter icon" class="social">
+                        </a>
+                    </li>
+                    <li class="icon my-2">
+                        <a href="https://www.facebook.com/calton.korir.5">
+                            <img src="assets/icons8-facebook-16.svg" alt="facebook icon" class="social">
+                        </a>
+                    </li>
+                    <li class="icon my-2">
+                        <a href="https://www.instagram.com/lonewolf254_/">
+                            <img src="assets/icons8-instagram-16.svg" alt="instagram icon" class="social">
+                        </a>
+                    </li>
+                    <li class="icon my-2">
+                        <a href="https://github.com/developerkorir">
+                            <img src="assets/icons8-github-16.svg" alt="github icon" class="social">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="home-btn m-4 text-center pt-1 btn rounded-pill">
+            <img src="assets/Untitled-2.svg" alt="Home Button">
+        </a>
+    </section>
+
+    <section class="about container-fluid text-center p-4 reveal" id="about">
+        <div class="info row align-items-center justify-content-center m-3 pb-4">
+            <h2 class="title text-center display-3 mb-3">About Me</h2>
+            <div class="d-none d-lg-inline-block col-md-3">
+                <img class="img-fluid portfolio-img" src="assets/Example.png" alt="portfolio image">
+            </div>
+            <div class="col-md-7 col-lg-5 d-flex flex-column text-start">
+                <h3>I'm Calton Korir, a Photographer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur earum nostrum amet reiciendis nam asperiores. Ab consequuntur porro dolorem pariatur recusandae fugiat dicta. Dolores deserunt veniam tenetur ducimus aperiam!</p>
+            </div>
+            <div class="col-md-3 text-start border-start border-success px-4">
+                <p class="lead fs-5"><span class="fw-bold">Name: </span>Calton Korir</p>
+                <p class="lead fs-5"><span class="fw-bold">Age: </span>23</p>
+                <p class="lead fs-5"><span class="fw-bold">Email: </span><a class="email" href="mailto:caltonkorir45@gmail.com">tim@example.com</a></p>
+                <p class="lead fs-5"><span class="fw-bold">From: </span>Kericho, Kenya</p>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </div>
+        <div class="row mt-5 align-items-center justify-content-center" id="container">
+            <div class="col-2 mx-3">
+                <h4 class="grid fs-1 text-secondary"><span class="counter" number="3">0</span>+</h3>
+                <p class="text-secondary fs-6">Years Experience</p>
+            </div>
+            <div class="col-2 mx-3">
+                <h4 class="grid fs-1 text-secondary"><span class="counter" number="100">0</span>+</h3>
+                <p class="text-secondary fs-6">Happy Clients</p>
+            </div>
+            <div class="col-2 mx-3">
+                <h4 class="grid fs-1 text-secondary"><span class="counter" number="22">0</span>+</h3>
+                <p class="text-secondary fs-6">Projects Done</p>
+            </div>
+            <div class="col-2 mx-3">
+                <h4 class="grid fs-1 text-secondary"><span class="counter" number="4">0</span>+</h3>
+                <p class="text-secondary fs-6">Get Awards</p>
+            </div>
+        </div>
+        <div class="container services">
+            <h2 class="title text-center display-3 my-5">My Services</h2>
+            <div class="d-flex row mb-4 align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card justify-content-center align-items-center shadow-sm">
+                        <img src="assets/paint-roller (2).png" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Android App Development</h5>
+                            <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam necessitatibus consectetur sunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card justify-content-center align-items-center shadow-sm">
+                        <img src="assets/pencil-case.png" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam necessitatibus consectetur sunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card justify-content-center align-items-center shadow-sm">
+                        <img src="assets/technical-support.png" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Support</h5>
+                            <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam necessitatibus consectetur sunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex row align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card justify-content-center align-items-center shadow-sm">
+                        <img src="assets/website.png" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Design & Development</h5>
+                            <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam necessitatibus consectetur sunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2 class="title text-center display-3 mt-5">Testimonials</h2>
+            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row justify-content-center align-items-center">
+                <div class="card col-6 mx-4 mb-5 mt-lg-4 shadow-sm">
+                    <div class="card-body">
+                      <img src="assets/Example.png" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">CEO from UK</h6>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident eaque. Voluptatum!</p>
+                    </div>
+                </div>
+                <div class="card col-6 mb-5 mt-lg-4 shadow-sm">
+                    <div class="card-body">
+                      <img src="assets/Example.png" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Freelancer from NY</h6>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident eaque. Voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="card col-6 mx-4 mb-5 shadow-sm">
+                    <div class="card-body">
+                      <img src="assets/Example.png" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">CEO from UK</h6>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident eaque. Voluptatum!</p>
+                    </div>
+                </div>
+                <div class="card col-6 mb-5 shadow-sm">
+                    <div class="card-body">
+                      <img src="assets/Example.png" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Freelancer from NY</h6>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident eaque. Voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
